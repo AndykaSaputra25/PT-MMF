@@ -1,0 +1,131 @@
+.carousel-img {
+    max-height: 100vh;
+}
+.carousel-caption {
+    border-top: 10px solid gainsboro;
+    background-color: #00000094;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.primary {
+    color: darkgreen;
+}
+
+.active {
+    color: darkgreen !important;
+}
+
+.title-container {
+    position: relative;
+    padding-bottom: 8px;
+}
+.title-container h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: darkgreen;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.about-us-title {
+    font-size: 30px;
+}
+.about-us-content {
+    font-size: 15px;
+}
+
+.card-icon {
+    transition: .5s;
+}
+.card-icon:hover {
+    color: darkgreen;
+}
+
+.masonry-item, 
+.masonry-sizer {
+    width: 30%;
+}
+
+.img-brand {
+    width: 50%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: .5;
+}
+.img-brand:hover {
+    filter: grayscale(0);
+    transform: scale(1.2) !important;
+}
+a {
+    color: white;
+}
+.bg-darker {
+    background: rgb(0, 0, 0);
+}
+.btn-to-top {
+    background: #07bf07;
+    display: inline;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.portofolio-filter li {
+    transition: .5s;
+    cursor: pointer;
+}
+.potfolio-filter, 
+.filter-active,
+.breadcumbs  {
+    background: #07bf07;
+}
+.breadcumbs {
+    margin-top: 73px;
+}
+.breadcumbs ol li + li::before {
+    display: inline-block;
+    color: white;
+    padding-right: 20px;
+    content: "/";
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+.img-testimonial {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.testimonial-item,
+.card-body h4 {
+    font-size: 18px;
+}
+
+.btn-submit {
+    background: darkgreen;
+    color: white;
+}
+
+
+@media (max-width : 1180px) {
+    .masonry-item, 
+    .masonry-sizer {
+        width: 40%;
+    }
+}
+@media (max-width : 576px) {
+    .masonry-item, 
+    .masonry-sizer {
+        width: 97%;
+    }
+}
